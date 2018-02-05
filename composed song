@@ -1,0 +1,39 @@
+#song used:Twinkle twinkle little star
+#music sheet:https://musescore.com/user/16839036/scores/3448626
+#bpm:https://musescore.com/user/16839036/scores/3448626
+use_synth:piano
+1.times do
+  play:c4
+  sleep 0.5
+  play:c4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play:a4
+  sleep 0.5
+  play:a4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+end
+sleep 1
+
+live_loop:twinkle do
+  play:c4
+  sleep 0.5
+  play:c4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play:a4
+  sleep 0.5
+  play:a4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  sample :ambi_lunar_land
+end
