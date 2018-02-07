@@ -1,0 +1,7 @@
+my_variable=21
+use_synth :piano
+89.times do
+  play my_variable
+  sleep 0.25
+  my_variable= my_variable +12
+end
