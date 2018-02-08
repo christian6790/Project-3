@@ -1,7 +1,10 @@
-my_variable=21
-use_synth :piano
-89.times do
-  play my_variable
-  sleep 0.25
-  my_variable= my_variable +12
-end
+
+
+
+my_variable=21  #this is the number that we are going to start with when we press play
+use_synth :piano #this is the synth that will make the sound sound like a piano
+89.times do  #this means that it will play each note 89 times
+  play my_variable  # it will play the variable of 21
+  sleep 0.25  # it will sleep for 0.25 after each note
+  my_variable= my_variable +12 #each time it plays a note it will add 12 to the note which will increase the sound 
+end  #this will end the process and stop the notes from playing continously
