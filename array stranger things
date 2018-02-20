@@ -4,12 +4,15 @@ use_bpm 160
 use_synth :saw
 stranger_notes = [:c2, :e2, :g2,:b2,:c3,:b2,:g2,:e2] # an array is a list of values
 index = 0
+
 live_loop :stranger do
   8.times do
     play stranger_notes[index]
     sleep 0.5
+    #this live loop^plays the index according to the order continously
     index= index + 1
     puts index
   end
+  #index+1 means that when the index=0 the index will increase by one everytime.
   index = 0
 end
