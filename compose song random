@@ -23,7 +23,7 @@ end
 45.times do
   sample:bd_boom, amp:x
   sleep 0.25
-  x=x+1
+  x=x+0.25
 end
 
 #From line 22-line 41 this is where the live_loops come in and they play after the melody from line 5-line 19 and they play with eachother continuously
