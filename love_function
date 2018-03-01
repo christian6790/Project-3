@@ -46,7 +46,7 @@ end
 
 live_loop :kanye_vocals do
   sample kanye_vocals
-  sleep 8 # this sleep is 8 because the sleep of both loops above are 4 allowing us to stay 'in pocket'
+  sleep 16 # this sleep is 8 because the sleep of both loops above are 4 allowing us to stay 'in pocket'
 end
 
 live_loop :kanye_song do
