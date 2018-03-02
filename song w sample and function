@@ -5,7 +5,7 @@ big_l="C:/Users/christian_curiel/my_samples/Big_L_-_Put_It_On2.wav"
 x=0
 index=0
 1.times do
-  play twinkle_notes[index]
+  play twinkle_notes[index] 
   sleep 0.5
   index=index + 1
   puts index
