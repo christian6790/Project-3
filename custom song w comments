@@ -1,0 +1,42 @@
+use_synth:piano
+use_bpm 80
+twinkle_notes= [:c4,:c4,:g4,:g4,:a4,:a4,:g4]
+big_l="C:/Users/christian_curiel/my_samples/Big_L_-_Put_It_On2.wav"
+#line 5 is the sample that you would hear at the end of the song
+x=0
+index=0
+1.times do
+  play twinkle_notes[index]
+  sleep 0.5
+  index=index + 1
+  puts index
+end
+#from line 5-21 is the melody it will play once the way i made it play once is the code 1.times
+live_loop:twinkle do
+  b = rand_i(7)
+  print b
+  play twinkle_notes[b]
+  sleep 0.5
+end
+live_loop:drums do
+  sample:drum_bass_hard
+  sleep 0.5
+end
+
+45.times do
+  sample:bd_boom, amp:x
+  sleep 0.25
+  x=x+0.25
+end
+# line 27-31 this a loop but the loop only last 45 times which means that the sample will play 45 times as well as the sound getting bigger becuase the x variable is getting it's sound amplified by 0.25.
+define :big do
+  sample big_l
+  sleep 4
+end
+#from line 32-35 there is a function and the function is called "big" what this does is it plays the sample and after every play it sleeps 4 times.
+live_loop:l do
+  big
+end
+#line 37-39 it is a live loop and that live loop is gonna play the sample over and over again continously.
+#From line 22-line 41 this is where the live_loops come in and they play after the melody from line 5-line 19 and they play with eachother continuously
+#from line 41-45 this is the sample that will play after the melody as sort as a bridge to the live loops and i have it play 48 times.
